@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 5px;
+            padding: 0;
+        }
+        .gap {
+            display: flex;
+            /* justify-content: space-between;
+             */
+
+        }
+
+        .gap input {
+            height: 30px;
+            margin-left: 30px;
+            width: 346px;
+            padding-left: 5px;
+        }
+        .separate{
+            height: 30px;
+            margin-left: 30px;
+            width: 275px;
+            padding-left: 5px;
+        }
+
+        select {
+            width: 288px;
+            height: 36px;
+            background-color: white;
+            margin-left: 48px;
+            padding-left: 5px;
+            right:19px;
+            position: relative;
+        }
+        label{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="gap">
+            <label for="firstname"><sup>*</sup>Name of the Applicant</label>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Middle Name"style="width:275px">
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div class="gap">
+            <select name="firstname" id="selectTag" style="width: 148px;">
+                <option value="select">Select</option>
+            </select>
+            <input type="text" placeholder="First Name" style="height: 30px;margin-left: 10px;">
+            <input type="text" placeholder="Middle Name"style="width:275px">
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div class="gap">
+            <label for="fullname">Full Name as per Records</label>
+            <input type="text" placeholder="New Full Name" style="width: 1054px;
+            position: relative;
+            right: 5px;">
+        </div>
+        <div style="margin-left: 113px;">
+            <sup>*</sup><label for="gender" style="margin-left: -4px;">Gender</label>
+            <input type="radio" name="gender" style="margin-left: 28px;">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Transgender
+            <sup style="margin-left: 335px;">*</sup><label for="dob">Date of Birth</label><input type="date" name="date" class="separate">
+            <label for="age">Age</label><input type="text" name="age" class="separate" style="width:126px">
+        </div>
+        <div class="gap" style="margin-left: 85px;">
+            <label for="place">Place of Birth</label>
+            <input type="text" placeholder="Place of Birth" style="margin-right: 264px;width:275px" class="separate">
+            <label for="country">Country Of Birth</label>
+            <select name="firstname" id="selectTag" >
+                <option value="select">India</option>
+            </select>
+        </div>
+        <div class="gap" style="margin-left: 85px;">
+        <label for="qualification">Qualification</label>
+        <select name="qualification" id="selectTag" style="margin-right: 279px;"> 
+            <option value="select">Select</option>
+        </select>
+        <label for="bg">BloodGroup</label>
+        <input type="text" name="bg" style="width:275px">
+        </div>
+        <div class="gap" style="margin-left: 52px;">
+            <label for="ln"  placeholder="EX-2947497488">Landline Number</label>
+            <input type="text" style="margin-right: 328px;width:275px">
+            <label for="eid">EmailID</label>
+            <input type="text" placeholder="ex@gmail.com;" style="width:346px">
+        </div>
+        <div class="gap" style="margin-left: 52px;">
+            <label for="mn" style="margin-left: -65px;">Application Mobile Number</label>
+            <input type="text" placeholder="+91" style="width:50px;background-color: rgb(169, 164, 164);">
+            <input type="text" placeholder="9838488478" style="width:275px;margin-right: 108px;background-color: rgb(169, 164, 164);">
+            <label for="mn" >Emergency Mobile Number</label>
+            <input type="text" placeholder="+91" style="width:50px;background-color: rgb(169, 164, 164);">
+            <input type="text" placeholder="Alternate Mobile Number" style="width:250px;background-color: rgb(169, 164, 164);">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+/* .container{
+    padding:20px;
+    border:5px double black;
+    color:red;
+    border-radius: 50px;
+    background-color: grey;
+    background-image: url("tree.jpeg");
+    width:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    top:500px;
+}
+body{
+    background-image: url("tree.jpeg"); 
+    background-repeat: no-repeat; 
+    background-size: 1500px 1500px;
+}
+a{
+    color:black;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover{
+    color:green;
+    font-size: 30px;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height:80vh;
+    background-color: aquamarine;
+    align-items: center;
+}
+.paragraph{
+    color: blue;
+    margin-top: -1px;
+}
+.paragraph-container{
+    border: 5px dotted green;
+    width: 282px;
+    height: 107px;
+    background-color: aqua;
+   
+}
+table,h1{
+    color:red;
+    background-color: orange;
+}
