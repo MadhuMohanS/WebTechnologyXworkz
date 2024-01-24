@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .image{
+            position:absolute;
+            width:500px;
+            height:500px;
+            margin-bottom: 500px;
+        }
+        .text{
+            color:red;
+            position: relative;
+            font-size: 30px;
+            background-color: yellow;
+        }
+       /* p{
+        margin-left: 800px;
+        background-color: red;
+       } */
+       .transform{
+        width:500px;
+        height:500px;
+        background-color: aqua;
+        margin-top: 600px;
+        /* margin-left: 200px; */
+        transform: translate(300px,300px) rotate(20deg);
+        /* transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out; */
+        /* animation: rotateAnimate 2s ease-in-out infinite  ; */
+       }
+       .box{
+        height:20px;
+        background-color: red;
+        transform: scaleY(20);
+       }
+       /* @keyframes rotateAnimate {
+        0%{
+            transform: rotate(0deg);
+            width: 500px;
+            height: 500px;
+        }
+        100%{
+            transform: rotate(360deg);
+            width: 100vw;
+            height: 100vh;
+        } */
+       /* } */
+       .skew{
+      height:20px;
+      background-color: yellow;
+      /* transform: skew(10deg,20deg);
+      transform-origin: 0; */
+       }
+    </style>
+</head>
+<body>
+    <div>
+        
+
+        <!-- <img class="image" src="tree.jpeg" alt=""> -->
+        <span class="text">hello world</span>
+        <!-- <p>hello world</p> -->
+        <div class="transform">
+             
+        </div>
+        <!-- <div class="box">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi atque praesentium, similique libero explicabo cum quibusdam distinctio aut pariatur. Error?</p>
+        </div> -->
+        <div class="skew">
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea sit, laudantium vitae sequi voluptatum at libero illum quasi cumque ratione.</p>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        }
+        .container{
+            width:100vw;
+            height:80vh;
+            background-color: rgb(220, 229, 233);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            align-content: center;
+        }
+        .login{
+            width:350px;
+            height: 400px;
+            border: 2px solid rgb(225, 220, 220);
+            border-radius: 15px;
+            margin-top: -37px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+           justify-content: space-around;
+           align-items: center;
+        }
+        label{
+            text-align: center;
+        }
+        input{
+            height: 45px;
+            width: 300px;
+            /* margin-left: 25px; */
+            border-radius: 5px;
+            /* padding: 10px; */
+        }
+        .container img{
+            height: 161px;
+            width: 344px;
+            margin-top:-68px;
+        }
+        p{
+            color: #1877f2;
+        }
+        span{
+            color: #96999e;
+            font-size: 13px;
+        }
+        .footer{
+          height:29vh;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          /* justify-content: space-around; */
+        }
+        
+        .footer ul{
+            display: flex;
+          
+        }
+        .footer ul li {
+            list-style-type: none;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: #8a8d91;
+            font-size: 12px;
+            font-family: inherit;
+           
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="	https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="can't load">
+       <div class="login">
+        <label for="login">Log in to Facebook</label>
+        <input type="text" placeholder="Email address or phone number" >
+        <input type="text" placeholder="Password">
+        <input type="button" value="Log in"  style=" background-color: #1877f2;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        width: 305px;
+        /* margin-left: 24px; */
+        height: 51px;">
+
+        <p>Forgotten account?</p>
+        <span>----------------------------------or---------------------------------</span>
+
+        <input type="button" value="Create new account" style="background-color: #36a420;
+        border-color: #36a420;color: white;font-size: 20px;width:200px">
+       </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="#">English(UK)</a></li>
+            <li><a href="#">ಕನ್ನಡ</a></li>
+            <li><a href="#">اردو</a></li>
+            <li><a href="#">मराठी</a></li>
+            <li><a href="#">తెలుగు</a></li>
+            <li><a href="#">हिन्दी</a></li>
+            <li><a href="#">தமிழ்</a></li>
+            <li><a href="#">മലയാളം</a></li>
+            <li><a href="#">বাংলা</a></li>
+            <li><a href="#">ગુજરાતી</a></li>
+            <li><a href="#">ਪੰਜਾਬੀ</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+

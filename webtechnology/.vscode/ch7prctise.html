@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        display:grid;
+        background-color: whitesmoke;
+        height:60px;
+       
+       } 
+       header{
+        background-color: black;
+        color:white;
+        border: 2px solid white;
+        border-radius: 10px;
+    
+       }
+       li{
+        list-style-type: none;
+        display: inline;
+        padding:0px 30px;
+       }
+       .content{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        height:40vh;
+        border: 2px solid white;
+        justify-content: space-between;
+        padding:30px 0px;
+       }
+       .left{
+        background-color: red;
+        border-radius: 10px;
+        width:300px;
+       }
+       .right{
+        background-color: yellow;
+        border-radius: 10px;
+        width:300px;
+       }
+       footer{
+        background-color: black;
+        color:white;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding:20px;
+        text-align: center;
+       }
+       .middleimage{
+        height:20vh;
+        background-image: url("nature.jpg"); 
+       }
+       .middle{
+        background-color: orange;
+        border-radius: 10px;
+        width:300px;
+       }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </header>
+        <div class="middleimage"></div>
+       <div class="content">
+        <div class="left">left</div>
+        <div class="middle">middle</div>
+        <div class="right">right</div>
+       </div>
+       <footer>Sports @&copy;</footer>
+    </div>
+</body>
+</html>

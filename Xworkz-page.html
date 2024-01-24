@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: poppins, sans-serif;
+        }
+
+        header ul {
+            background-color: black;
+            height: 20px;
+            padding: 30px;
+        }
+
+        li {
+            color: white;
+            list-style-type: none;
+            display: inline;
+            font-size: 13px;
+            margin: 12px;
+            font-weight: 600;
+        }
+
+        header ul li a img {
+            height: 62px;
+            width: 134px;
+            margin-top: -17px;
+            margin-left: 10px;
+            margin-right: 78px;
+        }
+
+        .li-css {
+            margin-top: -48px;
+            margin-left: 316px;
+        }
+
+        .icons {
+            margin-top: -21px;
+            margin-left: 1200px;
+        }
+
+        .icons li {
+            font-size: 16px;
+            margin: 25px;
+        }
+
+        .paragraph p {
+            font-size: 40px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .paragraph {
+            margin-left: 250px;
+            margin-top: 150px;
+            animation: paragraphAnimate 1s ease-in-out 1;
+        }
+
+        .code-img img {
+            margin-left: 350px;
+            margin-top: 9px;
+            width: 450px;
+            margin-right: 72px;
+            animation: codeimgAnimate 1s ease-in-out 1;
+        }
+
+        .middle-container {
+            display: flex;
+            /* justify-content: space-around; */
+        }
+
+        .para-but {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .button-css {
+            margin-left: 250px;
+            width: 119px;
+            height: 38px;
+            margin-top: 35px;
+
+            background: #f67f08;
+            border-radius: 27px;
+        }
+
+        .button-css a {
+            color: initial;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            position: static;
+        }
+        .button-css:hover{
+            background-color: white;
+            border: 2px solid red;
+        }
+        .button-css a:hover{
+            color:#1877f2;
+           
+        }
+
+        .li-css li:hover {
+            color: #f67f08;
+        }
+
+        .icons li:hover {
+            width: 300px;
+            height: 300px;
+            border-radius: 100px;
+            color: white;
+            background-color: #1877f2;
+        }
+
+        @keyframes paragraphAnimate {
+            from {
+                margin-left: 350px;
+                margin-top: 150px;
+            }
+
+            to {
+                margin-left: 250px;
+                margin-top: 150px;
+            }
+        }
+
+        @keyframes codeimgAnimate {
+            from {
+                margin-left: 152px;
+
+            }
+
+            to {
+
+                margin-left: 350px;
+
+            }
+        }
+        @keyframes letterAnimate {
+            from{
+               color:red
+            }
+            to{
+                color:white;
+            }
+        }
+
+        .letters {
+            display: flex;
+            color: red;
+        }
+
+        .l1 {
+            height: 45px;
+            width: 40px;
+            animation:letterAnimate  1s ease-in-out infinite ;
+            font-size: 60px;
+            font-weight: 600;
+            
+        }
+
+        .l2 {
+            height: 45px;
+            width: 40px;
+            font-size: 60px;
+            font-weight: 600;
+            animation: letterAnimate 1s ease-in-out 1s infinite ;
+        }
+
+        .l3 {
+            height: 45px;
+            width: 40px;
+            font-size: 60px;
+            font-weight: 600;
+            animation: letterAnimate 1s ease-in-out 2s infinite ;
+        }
+
+        .l4 {
+            height: 45px;
+            width: 40px;
+            font-size: 60px;
+            font-weight: 600;
+            animation: letterAnimate 1s ease-in-out 3s infinite ;
+        }
+
+        .l5 {
+            height: 45px;
+            width: 40px;
+            font-size: 60px;
+            font-weight: 600;
+            animation: letterAnimate 1s ease-in-out 4s infinite ;
+        }
+
+        .l6 {
+            height: 45px;
+            width: 40px;
+            font-size: 60px;
+            font-weight: 600;
+            animation: letterAnimate 1s ease-in-out 5s infinite ;
+        }
+
+        .l7 {
+            height: 45px;
+            width: 40px;
+            font-size: 60px;
+            font-weight: 600;
+            animation: letterAnimate 1s ease-in-out 6s infinite ;
+        }
+
+        .l8 {
+            height: 45px;
+            width: 40px;
+            font-size: 60px;
+            font-weight: 600;
+            animation: letterAnimate 1s ease-in-out 7s infinite ;
+        }
+
+        .l9 {
+            height: 45px;
+            width: 40px;
+            font-size: 60px;
+            font-weight: 600;
+            animation: letterAnimate 1s ease-in-out 8s infinite ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">
+                        <img src="https://www.x-workz.in/static/media/Logo.cf195593dc1b3f921369.png" alt="">
+                    </a></li>
+                <div class="li-css">
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>SOFTWARES</li>
+                    <li>COURSES</li>
+                    <li>DIRECTIONS</li>
+                    <li>REVIEWS</li>
+                    <li>INTERVIEW QUESTIONS</li>
+                </div>
+                <div class="icons">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="middle-container">
+        <div class="para-but">
+            <div class="paragraph">
+                <p>WE ARE </p>
+
+                <div class="letters">
+                    <div class="l1">X</div>
+                    <div class="l2">-</div>
+                    <div class="l3">W</div>
+                    <div class="l4" style="margin-left:14px">O</div>
+                    <div class="l5">R</div>
+                    <div class="l6">K</div>
+                    <div class="l7">E</div>
+                    <div class="l8">R</div>
+                    <div class="l9">S</div>
+                </div>
+            </div>
+            <button class="button-css"><a href="#">Enroll now</a></button>
+        </div>
+        <div class="code-img">
+            <img src="https://www.x-workz.in/static/media/coding_img.bef297f81da57125500a.png" alt="can't load">
+        </div>
+    </div>
+</body>
+
+</html>

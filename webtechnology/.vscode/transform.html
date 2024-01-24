@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           background-color: red;
+           height:70vh;
+        }
+        .box{
+            display:inline-block;
+            /* transform:translate(30px,50%); */
+            /* transform-origin: 0;
+            transform:rotate(0.25turn); */
+            border:2px solid white;
+        }
+        img{
+            width:500px;
+            height:400px;
+           transition-property: width,height;
+           transition-duration: 2s;
+           transition-delay: 2s;
+           transition-timing-function: ease-in-out;
+           
+        }
+        img:hover{
+         width:50px;
+         height:100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><img src="https://source.unsplash.com/TCpfPxKPOvk/200x200" alt="scean"></div>
+    </div>
+</body>
+</html>

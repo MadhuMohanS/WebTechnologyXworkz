@@ -1,0 +1,17 @@
+.red{
+    color:black;
+    width:500px;
+    height:1000px;
+    background-color:rgb(167, 54, 54);
+    border:2px solid red;
+    background-image: url("nature.jpg");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: 50% 50%;
+    background-attachment: scroll; 
+    background:red url("nature.jpg") no-repeat scroll top right;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

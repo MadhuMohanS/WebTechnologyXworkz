@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:100vh;
+            width:100vw;
+            background-color: orange;
+        }
+        .box{
+            width:300px;
+            height:300px;
+            background-color: yellow;
+            animation-name: animate;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 6;
+            animation-direction: alternate;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            transform: rotate(0.5turn);
+        }
+        @keyframes animate {
+            0%{
+                width:300px;
+                height:300px;
+                transform:rotate(0.5turn);
+            }
+            50%{
+                width:100vw;
+                height:100vh;
+                background-color: black;
+                color:white;
+                transform:rotate(1turn);
+            }
+            100%{
+                width:100vw;
+                height:100vh;
+                background-color: white;
+                transform:rotate(1turn);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is me</div>
+    </div>
+</body>
+</html>

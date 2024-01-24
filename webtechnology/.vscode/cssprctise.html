@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width:450px;
+            height:300px;
+            background-color: orange;
+            border: 2px solid black;
+            animation: box1 1s;
+        }
+        .box2{
+            width:450px;
+            height:300px;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            animation: box2 1s;
+        }
+        .box3{
+            width:450px;
+            height:300px;
+            background-color: green;
+            border: 2px solid black;
+            animation: box3 1s;
+        }
+        header{
+            height: 60px;
+  background-color: black;
+        }
+        ul li{
+            display: inline-block;
+  margin: 20px 37px;
+  color: white;
+        }
+        .container{
+            height:500px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            justify-content: space-around;
+        }
+        main{
+            background-color: red;
+            height: 300px;
+        }
+        
+        @keyframes box1 {
+            from{
+                transform: translate(0px);
+            }to{
+                transform: translate(-30vw);
+            }
+        }
+        @keyframes box2 {
+            from{
+                transform: translate(0px);
+            }to{
+                transform: translate(-60vw);
+            }
+        }
+        @keyframes box3 {
+            from{
+                transform: translate(0px);
+            }to{
+                transform: translate(-90vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <main></main>
+    
+</body>
+</html>

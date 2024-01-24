@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+       
+       }
+        header{
+        background-color: #2b9a2b;
+        color:white;
+        padding:10px;
+        /* line-height: 6px; */
+        border-radius: 10px;
+        
+        }
+        .container{
+            height:70vh;
+           
+            display: flex;
+            
+        }
+        .sidebar{
+         height:70vh;
+         width:20%;
+         padding: 0;
+         top: 5px;
+  position: relative;
+        }
+        .content{
+            height:70vh;
+            width:80%;
+            top: 10px;
+  position: relative;
+  padding: 15px;
+        }
+        .rightbar{
+            height:70vh;
+            width:20%;
+            background-color: skyblue;  
+            border-radius: 10px;  
+            top: 5px;
+  position: relative; 
+  color:white;
+       
+        }
+        li{
+            list-style-type: none;
+          
+           background-color: #eacfcf;
+           padding: 20px;
+           text-align: center;
+           border-radius:10px ;
+           border: 3px solid white;
+        }
+        h2{
+            padding:10px;
+        }
+        p{
+            padding:10px;
+            font-size: 20px;  
+        }
+        h1{
+            padding: 10px;
+           
+        }
+        .span{
+            padding: 10px;
+            text-decoration: underline;
+            font-size: 20px;
+        }
+        li:hover{
+            background-color: white;
+            border: 1px solid black;
+        }
+        span:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+     <h1>Welcome To My Page</h1>
+     <p>use the menu to select the diggerent styles</p>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <ul >
+                <li>Style1</li>
+                <li>Style2</li>
+                <li>Style3</li>
+                <li>Style4</li>
+                <li>No Stylesheet</li>
+            </ul>
+        </div><div class="content">
+            <h1>Same Page Different Style sheets</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reiciendis asperiores, laboriosam recusandae vel voluptatum. Quae a itaque repudiandae repellendus, laudantium cum! Nihil blanditiis vero sunt, est quis, id enim fugiat quisquam pariatur soluta aliquid. Architecto placeat delectus dolore saepe <div class="span">stylesheet1, stylesheet2 stylesheet3, stylesheet4 </div>
+            </p>
+            <h1>No Styles</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel facere dicta nobis? Ad harum neque delectus. Eum modi asperiores exercitationem sapiente maxime voluptas reprehenderit fugiat, optio aut aliquam error.</p>
+            <div class="span">No style sheet</div>
+            
+        </div><div class="rightbar">
+            <h2>Side Bar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, placeat accusamus quisquam corporis exercitationem assumenda perferendis quo eveniet nam et, velit optio asperiores! Ipsa consequuntur totam, consectetur, voluptatibus deserunt obcaecati quos beatae minima aspernatur doloremque nulla facere quae architecto ipsam!</p>
+        </div>
+    </div>
+</body>
+</html>

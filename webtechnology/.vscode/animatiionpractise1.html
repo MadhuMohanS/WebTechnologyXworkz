@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .progress{
+            height:3px;
+            background-color: red;
+          animation: load 1s ease-in-out 1 ;
+
+        }
+        header{
+            height:120px;
+            background-color: black;
+        }
+        main{
+            height:80vh;
+            background-color: orange;
+        }
+
+
+        @keyframes load {
+            from{
+                width:0px;
+            }
+            to{
+                width:100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main></main>
+</body>
+</html>
