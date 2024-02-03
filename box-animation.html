@@ -15,7 +15,7 @@
             width:100vw;
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
            
         }
@@ -29,35 +29,39 @@
             width:50px;
             background-color: black;
             border: 2px solid white;
-            animation: box-animate 1s ease-in-out  ;
+            animation: box-animate 1s ease-in-out infinite ;
         }
         .box2{
             height:50px;
             width:50px;
             background-color: black;
             border: 2px solid white;
-            animation: box-animate 2s ease-in-out  ;
+            animation: box-animate 1s ease-in-out  infinite;
         }
         .box3{
             height:50px;
             width:50px;
             background-color: black;
             border: 2px solid white;
-            animation: box-animate 2s ease-in-out  ;
+            animation: box-animate 1s ease-in-out infinite ;
         }
         .box4{
             height:50px;
             width:50px;
             background-color: black;
             border: 2px solid white;
-            animation: box-animate 2s ease-in-out  ;
+            animation: box-animate 1s ease-in-out infinite  ;
         }
         @keyframes box-animate {
             from{
                background-color: black; 
+               margin-left: 50px;
+               transform: rotate(0deg);
             }
             to{
                 background-color: white;
+                margin-right:50px ;
+                transform: rotate(360deg);
             }
         }
     </style>

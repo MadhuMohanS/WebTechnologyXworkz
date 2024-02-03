@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    link
+    <style>
+        .margin {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="h-100 bg-danger">
+    <div class="container d-flex justify-content-center align-items-center ">
+        <div class="d-flex align-items-end">Hello</div>
+        <img src="tree.jpeg" height="200px" width="00px">
+        
+    </div>
+</div> -->
+    <div style="background-color: #eee;">
+        <div class="d-flex justify-content-center align-items-center align-content-center">
+            <div>Hello</div>
+            <img src="tree.jpeg" height="200px" width="100px">
+
+        </div>
+    </div>
+    <p>loading...</p>
+    <div class="spinner-border text-danger"></div>
+    <form action="">
+        <div>
+            <label for="userName" class="form-check-label">User Name</label>
+            <input class="form-control w-25" type="text" placeholder="userName">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-check-label">Password</label>
+            <input class="form-control w-25" type="password" placeholder="password" id="">
+        </div>
+        <div>
+            <input type="button" class="btn btn-primary" value="submit">
+        </div>
+    </form>
+    <div>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+            Tooltip on top
+          </button>
+         
+    </div>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
