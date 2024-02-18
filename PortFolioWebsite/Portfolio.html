@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", Arial, sans-serif;
+        }
+
+        header nav ul {
+            background-color: black;
+            height: 60px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 10px 0px 0px 30px;
+            padding: 10px;
+        }
+        header ul li a{
+            color:white;
+           text-decoration: dashed;
+           position: relative;
+        }
+
+        header span {
+            color: white;
+            font-weight: 701;
+            margin-left: 138px;
+            margin-right: 123px;
+        }
+
+        .info {
+            margin-left: 375px;
+            margin-top: 150px;
+            margin-right: 83px;
+            width: 412px;
+        }
+
+        .left {
+            display: flex;
+        }
+
+        .info span {
+            font-size: 30px;
+            font-weight: 701;
+        }
+        nav a::before{
+           content:" ";
+           color:white ;
+           position: absolute;
+           bottom: -10px;
+           left:0;
+           width:0%;
+           height:3px;
+           background-color: rgb(234, 234, 52);
+           transition: all .5s;
+          
+        }
+        nav a:hover::before{
+            width:100%;
+            color:rgb(234, 234, 52) ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <span style="color:rgb(234, 234, 52)">MADHU MOHAN S</span>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Resume</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">My Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" style="background-color: black;">
+        <div class="left">
+
+            <div class="info">
+                <p style="margin-bottom: 10px;">Hello!</p>
+                <span style="color: white;font-size: 40px;">I'm </span>
+                <div><span style="color:rgb(234, 234, 52);font-size: 40px">Madhu Mohan</span></div>
+                <p style="margin-top: 10px;font-size:20px ;color: white;">a FreeLance Software Developer</p>
+            </div>
+            <div class="right-image">
+                <img src="Madhu_Mohan_S-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
