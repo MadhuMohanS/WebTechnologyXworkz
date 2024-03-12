@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <button onclick="addition()" type="button">add</button><br>
+
+        <input type="number" id="sub1">
+        <input type="number" id="sub2">
+        <button type="button" onclick="subtraction()">subtraction</button><br>
+
+        <input type="number" id="mul1">
+        <input type="number" id="mul2">
+        <button type="button" onclick="multiplication()">multiplication</button><br>
+
+        <input type="number" id="div1">
+        <input type="number" id="div2">
+        <button type="button" onclick="division()">division</button><br>
+
+    </form>
+    <script>
+        function addition(){
+            a=parseInt(document.getElementById("num1").value);
+            b=parseInt(document.getElementById("num2").value);
+            let c=a+b;
+            console.log("additon:",c);
+        }
+
+        function subtraction(){
+            let a=parseInt(document.getElementById("sub1").value);
+            let b=parseInt(document.getElementById("sub2").value);
+            console.log("subtraction:",a-b);
+        }
+
+        function multiplication(){
+            let a=parseInt(document.getElementById("mul1").value);
+            let b=parseInt(document.getElementById("mul2").value);
+            console.log("multiplication:",a*b);
+            
+        }
+
+        function division(){
+            let a=parseInt(document.getElementById("div1").value);
+            let b=parseInt(document.getElementById("div2").value);
+            console.log("division:",a/b);
+            
+        }
+    </script>
+</body>
+</html>
