@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <div>
+    <button type="button" id="dhoni" onclick="changeColor('dhoni')">MS Dhoni</button><span id="dhonis"></span>
+</div>
+<div>
+    <button type="button" id="kholi" onclick="changeColor('kholi')">Kholi</button><span id=""></span>
+</div>
+<div>
+    <button type="button" id="yuv" onclick="changeColor('yuv')">Yuvraj</button>
+</div>
+<div>
+    <button type="button" id="jadeja" onclick="changeColor('jadeja')">Jadeja</button>
+</div>
+<div>
+    <button type="button" id="harbajan" onclick="changeColor('harbajan')">Harbajan</button>
+</div>
+<div>
+    <button type="button" id="kl" onmouseover="changeText('kl')" onmouseout="removeChangeText('kl')">KL Rahul</button>
+</div>
+<div>
+    <button type="button" id="sachin" onmouseover="changeText('sachin')" onmouseout="removeChangeText('sachin')">Tendulkar</button>
+</div>
+<div>
+    <button type="button" id="raina" onmouseover="changeText('raina')" onmouseout="removeChangeText('raina')">Raina</button>
+</div>
+<div>
+    <button type="button" id="yusuf" onmouseover="changeText('yusuf')" onmouseout="removeChangeText('yusuf')">Yusuf</button>
+</div>
+<div>
+    <button type="button" id="shami" onmouseover="changeText('shami')" onmouseout="removeChangeText('shami')">Shami</button>
+</div>
+<div>
+    <button type="button" id="siraj" onmouseover="changeText('siraj')" onmouseout="removeChangeText('siraj')">Siraj</button>
+</div>
+</form>
+<script>
+function changeColor(id){
+//  let text= document.getElementById("dhoni").style.color="red"
+// let upper=text.toUpperCase();
+// document.getElementById("dhoni").innerHTML=upper;
+document.getElementById(id).style.textTransform="uppercase";
+document.getElementById(id).style.color="red";
+
+}
+function changeText(id){
+  document.getElementById(id).style.textTransform="uppercase";
+  document.getElementById(id).style.color="green";
+}
+function removeChangeText(id){
+    document.getElementById(id).style.textTransform="capitalize";
+    document.getElementById(id).style.color="black";
+}
+</script>
+</body>
+</html>
