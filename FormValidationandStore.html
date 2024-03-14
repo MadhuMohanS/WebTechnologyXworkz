@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="registration">
+     Enter Name: <input type="text" id="firstName"><br>
+     <span id="fnameError"></span><br>
+     Enter LastName: <input type="text" id="lastName"><br>
+     <span id="lnameError"></span><br>
+     Enter Password: <input type="password" id="password"><br>
+     <span id="passwordError"></span><br>
+     Gender:<br>
+     Male:<input type="radio" name="gender" value="male">
+     Female:<input type="radio" name="gender" value="female">
+     Others:<input type="radio" name="gender" value="others"><br>
+     <span id="genderError"></span><br>
+
+     <select name="cityName">
+        <option value="0">--select--</option>
+        <option value="banglore">Banglore</option>
+        <option value="davangere">Davangere</option>
+        <option value="hubli">Hubli</option>
+     </select>
+     <span id="cityNameError"></span><br>
+     <button type="button" onclick="formValidation()">Submit</button> 
+    </form>
+    <script>
+        function formValidation(){
+          var firstName= document.getElementById("firstName");
+          if(firstName.value==''){
+            document.getElementById("fnameError").innerHTML="*firstName is empty";
+            document.getElementById("fnameError").style.color="red";
+          }
+
+          var lastName=document.getElementById("lastName");
+          if(lastName.value==""){
+            document.getElementById("lnameError").innerHTML="*lastName is empty";
+            document.getElementById("lnameError").style.color="red";
+          }
+
+          var password=document.getElementById("password");
+          if(password.value==""){
+            document.getElementById("passwordError").innerHTML="*password is empty";
+            document.getElementById("passwordError").style.color="red";
+          }
+
+        //   console.log(document.registration.gender[0].value)
+        //   console.log(document.registration.gender[1].value)
+        //   console.log(document.registration.gender[2].value)
+
+        if(document.registration.gender[0].checked==false && document.registration.gender[1].checked==false && document.registration.gender[2].checked==false){
+            document.getElementById("genderError").innerHTML="*select gender";
+            document.getElementById("genderError").style.color="red";
+            // console.log("pls select gender");
+        }
+        var genderData;
+
+        if(document.registration.gender[0].checked==true){
+        //   console.log(document.registration.gender[0].value);
+             genderData=document.registration.gender[0].value;
+        }else if(document.registration.gender[1].checked==true){
+            genderData=document.registration.gender[1].value;
+        }
+        else if(document.registration.gender[2].checked==true){
+            genderData=document.registration.gender[2].value;
+        }
+
+        if(document.registration.cityName.value=="0"){
+            document.getElementById("cityNameError").innerHTML="*select city";
+            document.getElementById("cityNameError").style.color="red";
+        }
+         
+        var cityName=document.registration.cityName.value;
+       console.log(document.registration.cityName.value);
+        var details= {
+            firstName:firstName.value,
+            lastName:lastName.value,
+            password:password.value,
+            gender:genderData,
+            city:cityName
+        }
+
+        var data=JSON.stringify(details);
+
+        localStorage.setItem("registerInfo",data);
+
+        var object=JSON.parse(data)
+
+        console.log(object.firstName);
+        console.log(object.lastName);
+        }
+    </script>
+</body>
+</html>
