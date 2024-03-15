@@ -10,13 +10,14 @@
         html,
         body {
             width: 100vw;
-          height: 100vh;
+            height: 100vh;
             /* margin:0px;
             padding:0px; */
             overflow-x: hidden;
             background-color: black;
         }
-        html{
+
+        html {
             font-size: 62.5%;
         }
 
@@ -39,18 +40,20 @@
             height: 6rem;
             /* position: fixed; */
             width: 100%;
-            z-index:9;
+            z-index: 9;
         }
-        nav li:first-child{
+
+        nav li:first-child {
             margin-right: auto;
         }
-        .sidebar{
+
+        .sidebar {
             position: fixed;
-            top:0;
-            right:0;  
-            height:100vh;
-            width:25rem;
-            z-index:1999;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 25rem;
+            z-index: 1999;
             background-color: black;
             backdrop-filter: blur(1rem);
             display: none;
@@ -58,20 +61,23 @@
             align-items: flex-start;
             justify-content: flex-start;
         }
-        
-        .sidebar li a{
-            color:white;
-            width:100%;
+
+        .sidebar li a {
+            color: white;
+            width: 100%;
 
         }
-        .sidebar span{
-            width:25rem;
+
+        .sidebar span {
+            width: 25rem;
             margin-left: 3.1rem;
         }
-        .sidebar li{
-            width:100%;
+
+        .sidebar li {
+            width: 100%;
         }
-        .sidebar li:hover{
+
+        .sidebar li:hover {
             background-color: rgb(69, 67, 67);
         }
 
@@ -91,8 +97,8 @@
         header span {
             color: white;
             font-weight: 701;
-            margin-left: 13.8rem;
-            margin-right: 12.3rem;
+            margin-left: 0.8rem;
+            margin-right: 45rem;
             font-size: 1.5rem;
         }
 
@@ -280,12 +286,14 @@
             font-weight: 701;
             color: white;
         }
+
         .service-grid-blocks {
             display: grid;
             grid-template-columns: auto auto auto;
             justify-content: center;
             grid-gap: 3rem;
         }
+
         .service-inside-content {
             display: flex;
             flex-direction: column;
@@ -293,17 +301,19 @@
             display: grid;
             grid-row-gap: 2rem;
         }
+
         .service-box {
             height: 25rem;
             width: 35rem;
             background-color: rgb(74, 70, 70);
             border: 1px solid rgb(61, 59, 59);
-            
+
             /* transition-property: margin;
             transition-duration: 0.2s;
             transition-timing-function: ease-in; */
         }
-        .service-inside{
+
+        .service-inside {
             height: 25rem;
             width: 35rem;
             display: flex;
@@ -311,48 +321,171 @@
             justify-content: center;
             align-items: center;
             align-content: center;
-           
+
         }
-        .service-inside i{
-            color:rgb(234, 234, 52);font-size: 7rem;
+
+        .service-inside i {
+            color: rgb(234, 234, 52);
+            font-size: 7rem;
         }
-        .service-inside p{
+
+        .service-inside p {
             margin-top: 2rem;
-            color:white;
+            color: white;
             font-size: 1.3rem;
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: 0.3rem;
         }
-        .service-box:hover{
-            background-color:rgb(234, 234, 52);
-        } 
-        .service-box:hover i{
-            color:white;
+
+        .service-box:hover {
+            background-color: rgb(234, 234, 52);
         }
-        .service-box:hover p{
-            color:black;
+
+        .service-box:hover i {
+            color: white;
         }
+
+        .service-box:hover p {
+            color: black;
+        }
+
         /* .service-inside i:hover{
             color:white;
         } */
-        .service-box hr{
-            width:10%;color:rgb(234, 234, 52);margin-top: 2rem;height:auto
+        .service-box hr {
+            width: 10%;
+            color: rgb(234, 234, 52);
+            margin-top: 2rem;
+            height: auto
         }
+
         @media(max-width:998px) {
-           html{
-            font-size: 55%;
-           }            
+            html {
+                font-size: 50%;
+            }
         }
+
         @media(max-width:768px) {
-           html{
-            font-size: 45%;
-           } 
-           .hideOnMobile{
-            display: none;
-           }           
+            html {
+                font-size: 45%;
+            }
+
+            .hideOnMobile {
+                display: none;
+            }
+
         }
-        
+
+        @media(max-width:430px) {
+            header span {
+                margin-left: 0rem;
+                font-size: 1.3rem;
+                margin-right: 35rem;
+                margin-left: 0.8rem;
+            }
+
+            .container {
+                height: 100rem;
+            }
+
+            .container .info {
+                width: 291px;
+                margin-left: 5rem;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            .about{
+                height:60rem;
+            }
+
+            .resume {
+                height: 150rem;
+            }
+
+            .left {
+                background-image: url("Madhu_Mohan_S-removebg-preview.png");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                height:80rem;
+            }
+
+            .right-image img {
+                display: none;
+            }
+
+            .left-image img {
+                width: 200px;
+                margin-left: 87rem;
+                margin-right: -6rem;
+            }
+
+            /* .about content{
+                /* width:200px; */
+            /* margin-right: 10rem;
+            } */
+            .content p {
+                width: 37rem;
+            }
+
+            /* .row1{
+                width:30rem;
+            } */
+
+            .about-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+
+            }
+
+            .resume .grid-blocks {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+
+            }
+
+            .resume .btn-design {
+                position: relative;
+                right: 42rem;
+            }
+
+            .resume .content {
+                position: relative;
+                right: 30rem;
+            }
+
+            .resume .content p {
+                width: 40rem;
+            }
+
+            .service .service-grid-blocks {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+
+            .service .content {
+                position: relative;
+                right: 30rem;
+            }
+
+            .service .content p {
+                width: 40rem;
+            }
+
+        }
     </style>
 </head>
 
@@ -388,10 +521,10 @@
     <div class="container">
         <div class="left">
             <div class="info">
-                <p style="margin-bottom: 1rem;">Hello!</p>
+                <p style="margin-bottom: 1rem;color:rgb(234, 234, 52);font-size:3rem;">Hello!</p>
                 <span style="color: white;font-size: 4rem;">I'm </span>
                 <div><span>Madhu Mohan</span></div>
-                <p style="margin-top: 1rem;font-size:4rem ;color: white;">a FreeLance Software Developer</p>
+                <p style="margin-top: 1rem;font-size:4rem ;color: white;text-align: center;">a FreeLance Software Developer</p>
                 <div class="btn-design">
                     <div class="hire-design"><button>Hire Me</button></div>
                     <div class="work-design"><button>My Work</button></div>
@@ -567,17 +700,17 @@
                     <hr>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <script>
-        function showSideBar(){
-            const sidebar=document.querySelector('.sidebar');
-            sidebar.style.display='flex';
+        function showSideBar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
         }
-        function hideSideBar(){
-            const sidebar=document.querySelector('.sidebar');
-            sidebar.style.display='none';
+        function hideSideBar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
         }
     </script>
 </body>
